@@ -418,16 +418,27 @@
 
 <p>O problema DTLZ1 possui uma frente ótima de Pareto formada por </p>
 <div class="arithmatex">\[
+\textcolor{darkred}{\boldsymbol{g^*=0}}
+\]</div>
+<div class="arithmatex">\[
+\textcolor{blue}{\boldsymbol{f_1(x)+f_2(x)...+f_{M-1}(x)+f_M(x) = 0.5}}
+\]</div>
+<div class="arithmatex">\[
+\Large \sum_{m=1}^M = \textcolor{blue}{f_{m}}^*
+\]</div>
+<p>$$</p>
+<p>$$</p>
+<div class="arithmatex">\[
 \large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_2}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_4}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
 \]</div>
 <div class="arithmatex">\[
 \large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
 \]</div>
 <div class="arithmatex">\[
-\large x_1, \underbrace{x_2}_{\boldsymbol{X_{M-1}}}, \underbrace{\underbrace{\underbrace{x_3}_{\boldsymbol{X_M}}, x_4, x_5, x_6, x_7, x_8, x_9, x_{10}}_{\boldsymbol{\big|X_M\big| = K}}}_{\textcolor{darkred}{\boldsymbol{g(X_M)}}}
+\large x_1, \underbrace{x_2}_{\boldsymbol{X_{M-1}}}, \underbrace{\underbrace{\underbrace{x_3}_{\boldsymbol{X_M}}, x_4, x_5, x_6, x_7, x_8, x_9, x_{10}}_{\boldsymbol{K = \big|X_M\big| = (X_I \in X_M)}}}_{\textcolor{darkred}{\Large \boldsymbol{g(X_M)}}}
 \]</div>
 <div class="arithmatex">\[
-\large x_1, x_2, \underbrace{x_3}_{\boldsymbol{X_{M-1}}}, \underbrace{\underbrace{\underbrace{x_4}_{\boldsymbol{X_M}}, x_5, x_6, x_7, x_8, x_9, x_{10}}_{\boldsymbol{\big|X_M\big| = K}}}_{\textcolor{darkred}{\large \boldsymbol{g(X_M)}}}
+\large x_1, x_2, \underbrace{x_3}_{\boldsymbol{X_{M-1}}}, \underbrace{\underbrace{\underbrace{x_4}_{\boldsymbol{X_M}}, x_5, x_6, x_7, x_8, x_9, x_{10}}_{\boldsymbol{K = \big|X_M\big| = (X_I \in X_M)}}}_{\textcolor{darkred}{\Large \boldsymbol{g(X_M)}}}
 \]</div>
 <div class="arithmatex">\[
 \textcolor{blue}{f_1}(X)=\frac{1}{2}x_1 x_2...x_{M-1}(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
@@ -439,7 +450,7 @@
 \textcolor{blue}{f_{M-1}}(X)=\frac{1}{2}x_1 (1-x_2)(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
 \]</div>
 <div class="arithmatex">\[
-\textcolor{blue}{f_M}(\boldsymbol{x})=\frac{1}{2}(1-x_1)(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
+\textcolor{blue}{f_M}(X)=\frac{1}{2}(1-x_1)(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
 \]</div>
 <div class="arithmatex">\[
 \textcolor{darkred}{\boldsymbol{g(X_M)} = 100 \bigg[\big|X_m\big|+\displaystyle\sum_{X_I \in X_M} (xi-0.5)^2-cos(20\pi(X_i-0.5))\bigg]}
