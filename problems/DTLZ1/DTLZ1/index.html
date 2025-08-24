@@ -416,10 +416,19 @@
 
   <h1>DTLZ1</h1>
 
-<p>O problema DTLZ1 possui uma frente ótima de Pareto formada por um hyperplano Linear, determinada por:</p>
+<p>O problema DTLZ1 possui uma frente ótima de Pareto formada por um hyperplano Linear:</p>
 <div class="arithmatex">\[
 \textcolor{blue}{\boldsymbol{f_1(x)+f_2(x)...+f_{M-1}(x)+f_M(x) = 0.5}}\textbf{ definido por} \Large \sum_{m=1}^M = \textcolor{blue}{\boldsymbol{f_{m}}}^*
 \]</div>
+<p>Para um problema com 3 objetivos(M = 3), temos:</p>
+<div class="arithmatex">\[
+\large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
+\]</div>
+<p>Onde <strong><em>f</em></strong>, são as funções objetivo de acordo com o número total de <strong><em>M</em></strong></p>
+<p>Podemos calcular o numero de variáveis de decisão, for isolando N na equação:
+K = N-M+1 onde N = K+M-1
+-N = -K-M+1
+N = K+M-1</p>
 <div class="arithmatex">\[
 \textcolor{darkred}{\boldsymbol{g^*=0}}
 \]</div>
@@ -431,9 +440,6 @@
 \]</div>
 <div class="arithmatex">\[
 \large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_2}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_4}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
-\]</div>
-<div class="arithmatex">\[
-\large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
 \]</div>
 <div class="arithmatex">\[
 \large x_1, \underbrace{x_2}_{\boldsymbol{X_{M-1}}}, \underbrace{\underbrace{\underbrace{x_3}_{\boldsymbol{X_M}}, x_4, x_5, x_6, x_7, x_8, x_9, x_{10}}_{\boldsymbol{K = \big|X_M\big| = (X_I \in X_M)}}}_{\textcolor{darkred}{\Large \boldsymbol{g(X_M)}}}
