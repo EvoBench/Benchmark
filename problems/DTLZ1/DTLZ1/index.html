@@ -418,29 +418,18 @@
 
 <p style="font-size: 20px;">O problema DTLZ1 possui uma frente ótima de Pareto formada por um hyperplano linear:</p>
 
-<div align="right">
-
-$$\textcolor{blue}{\boldsymbol{f_1(x)+f_2(x)...+f_{M-1}(x)+f_M(x) = 0.5}}\textbf{   definido por} \Large \sum_{m=1}^M = \textcolor{blue}{\boldsymbol{f_{m}}}^*$$
-
-</div>
-
-<p>DTLZ1 é definido pelas seguintes variáveis</p>
-<ul>
-<li><strong><em>M</em></strong><strong>: Número de objetivos do problema</strong></li>
-<li><strong><em>N</em></strong><strong>: Número de variáveis de decisão</strong></li>
-<li><strong><em>K</em></strong><strong>: Valor do Vetor objetivo, que contém as variáveis de decisão que deverão ser</strong> <strong><em>minizadas</em>* </strong>por um algorítimo evolutivo(MOEA) a fim de chegar a POF(Frente ótima de Pareto). Definido por:**</li>
-</ul>
-<div align="right">
-
-$$\boldsymbol{K} = \text{ao valor do vetor } \boldsymbol{\big|X_M\big|} \text{ onde todos } \boldsymbol{X_i} \text{ pertencentes a }$$
-
-</div>
-
 <div class="arithmatex">\[
-\boldsymbol{(X_i \in X_M)} \textit{ devem ser 'minizados' para que a função }
+\textcolor{blue}{\boldsymbol{f_1(x)+f_2(x)...+f_{M-1}(x)+f_M(x) = 0.5}}\textbf{  definido por} \Large \sum_{m=1}^M = \textcolor{blue}{\boldsymbol{f_{m}}}^*
 \]</div>
+<p style="font-size: 20px;">DTLZ1 é definida pelas seguintes variáveis:</p>
+<ul style="font-size:20px;">
+  <li>M: Número de objetivos do problema</li>
+  <li>N: Número de variáveis de decisão</li>
+  <li>K: representado por:</li>
+</ul>
+
 <div class="arithmatex">\[
-\textcolor{darkred}{\boldsymbol{g(X_M)}} \text{ seja } \textcolor{darkred}{\boldsymbol{g^* = 0}}
+\boldsymbol{K}\text{ é o valor do vetor } \boldsymbol{\big|X_M\big|} \text{ onde todos } \boldsymbol{X_i} \text{ pertencem a } \boldsymbol{X_M}\text{ }\boldsymbol{(X_i \in X_M)}
 \]</div>
 <p><strong>Para um problema com 3 objetivos</strong> <strong><em>(M = 3)</em></strong><strong>,temos:</strong></p>
 <div class="arithmatex">\[
