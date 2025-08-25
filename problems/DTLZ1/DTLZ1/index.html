@@ -529,12 +529,12 @@
 
 <h3 id="funcao-g"><strong>Funçao g</strong></h3>
 <p style="font-size: 17px;">O objetivo da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span> é <strong><i>maximizar a distancia</i></strong> da POF do problema, atraindo os algorítimos evolutivos a POF locais.</p>
+<p style="font-size: 17px;">Quando o vetor <strong><i>| X<sub>M</sub> |</i></strong> atinge os valores de <strong><i>| 0.5  0.5 .... 0.5 |</i></strong> a POF do problema é encontrada.</p>
 <div class="arithmatex">\[
 \textcolor{darkred}{\boldsymbol{g(X_M)} = 100 \bigg[\big|X_m\big|+\displaystyle\sum_{X_I \in X_M} (xi-0.5)^2-cos(20\pi(X_i-0.5))\bigg]}
 \]</div>
 <h3 id="funcoes-objetivo"><strong>Funções objetivo</strong></h3>
 <p style="font-size: 17px;">Cada função objetivo recebe um valor da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span>. A POF do problema esta diretamente ligada a <span style="color: darkred;"><strong><i>g = 0</i></strong></span>.</p>
-<p style="font-size: 17px;">Quando o vetor <strong><i>| X<sub>M</sub> |</i></strong> atinge os valores de <strong><i>| 0.5  0.5 .... 0.5 |</i></strong> a POF do problema é encontrada.</p>
 <div class="arithmatex">\[
 \textcolor{blue}{f_1}(X)=\frac{1}{2}x_1 x_2...x_{M-1}(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
 \]</div>
