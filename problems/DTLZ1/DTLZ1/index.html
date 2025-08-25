@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#definicao" class="md-skip">
+        <a href="#dtlz1" class="md-skip">
           Skip to content
         </a>
       
@@ -382,6 +382,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -474,9 +476,8 @@
 
 
 
-  <h1>DTLZ1</h1>
-
-<h3 id="definicao"><strong>Definição</strong></h3>
+<h1 id="dtlz1"><strong>DTLZ1</strong></h1>
+<h2 id="definicao"><strong>Definição</strong></h2>
 <p style="font-size: 17px;">O problema DTLZ1 possui uma frente ótima de Pareto formada por um hyperplano linear:</p>
 <div class="arithmatex">\[
 \textcolor{blue}{\boldsymbol{f_1(x)+f_2(x)...+f_{M-1}(x)+f_M(x) = 0.5}}\text{  definido por} \Large \sum_{m=1}^M = \textcolor{blue}{\boldsymbol{f_{m}}}^*
@@ -492,8 +493,8 @@
 \]</div>
 <p style="font-size: 17px;">O valor de <strong><i>N</i></strong> pode ser obtido pela equação <strong><i>N = K+M-1</i></strong> substituindo o valor de <strong><i>K</i></strong>. De forma alternativa, pode se definir o valor de <strong><i>K</i></strong> pela equação <strong><i>K = N-M+1</i></strong>, substituindo o valor de <strong><i>N</i></strong>.</p>
 
-<h3 id="exemplo"><strong>Exemplo</strong></h3>
-<h4 id="para-m-3"><strong>Para M = 3</strong></h4>
+<h2 id="exemplo"><strong>Exemplo</strong></h2>
+<h3 id="para-m-3"><strong>Para M = 3</strong></h3>
 <div class="arithmatex">\[
 \large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
 \]</div>
@@ -510,7 +511,7 @@
 <p style="font-size: 17px;">A posição <strong><i>X<sub>M-1</sub></i></strong> e <strong><i>X<sub>M</sub></i></strong> é representada por <strong><i>x<sub>2</sub></i></strong> e <strong><i>x<sub>3</sub></i></strong> respectivamente. O tamanho do vetor <strong><i>| X<sub>M</sub> |</i></strong> é definido pelo valor de <strong><i>K</i></strong> = 8, e se inicia por <strong><i>x<sub>3</sub></i></strong>, percorrendo até o último <strong><i>K = 8</i></strong> váriaveis denotado por <strong><i>x<sub>10</sub></i></strong>.</p>
 <p style="font-size: 17px;">A função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span> que corresponde as variáveis de decisão dentro do intervalo de <strong><i>| X<sub>M</sub> |</i></strong> ( <strong><i>x<sub>3</sub>  x<sub>4</sub>  x<sub>5</sub>  x<sub>6</sub> x<sub>7</sub>  x<sub>8</sub>  x<sub>9</sub>  x<sub>10</sub></i></strong> ), deve ser <i>minimizada</i> pelos algoritimos evolutivos (<strong><i>MOEAs</i></strong>). Quando o valor desta função atinge <span style="color: darkred;"><strong><i>g = 0</i></strong></span>, encontra-se a frente ótima de Pareto do problema.</p>
 
-<h4 id="para-m-4"><strong>Para M = 4</strong></h4>
+<h3 id="para-m-4"><strong>Para M = 4</strong></h3>
 <div class="arithmatex">\[
 \large \underbrace{f_1}_{\boldsymbol{\textcolor{blue}{f_1}(X)}}, \underbrace{f_2}_{\boldsymbol{\textcolor{blue}{f_2}(X)}}, \underbrace{f_3}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}, \underbrace{f_4}_{\boldsymbol{\textcolor{blue}{f_M}(X)}}
 \]</div>
@@ -527,13 +528,13 @@
 <p style="font-size: 17px;">A posição <strong><i>X<sub>M-1</sub></i></strong> e <strong><i>X<sub>M</sub></i></strong> é representada por <strong><i>x<sub>3</sub></i></strong> e <strong><i>x<sub>4</sub></i></strong> respectivamente. O tamanho do vetor <strong><i>| X<sub>M</sub> |</i></strong> é definido pelo valor de <strong><i>K</i></strong> = 7, e se inicia por <strong><i>x<sub>4</sub></i></strong>, percorrendo até o último <strong><i>K = 7</i></strong> váriaveis denotado por <strong><i>x<sub>10</sub></i></strong>.</p>
 <p style="font-size: 17px;">A função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span> que corresponde as variáveis de decisão dentro do intervalo de <strong><i>| X<sub>M</sub> |</i></strong> ( <strong><i>x<sub>4</sub>  x<sub>5</sub>  x<sub>6</sub>  x<sub>7</sub> x<sub>8</sub>  x<sub>9</sub>  x<sub>10</sub> )</i></strong>, deve ser <i>minimizada</i> pelos algoritimos evolutivos (<strong><i>MOEAs</i></strong>). Quando o valor desta função atinge <span style="color: darkred;"><strong><i>g = 0</i></strong></span>, encontra-se a frente ótima de Pareto do problema.</p>
 
-<h3 id="funcao-g"><strong>Funçao g</strong></h3>
+<h2 id="funcao-g"><strong>Funçao g</strong></h2>
 <p style="font-size: 17px;">O objetivo da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span> é <strong><i>maximizar a distancia</i></strong> da POF do problema, atraindo os algorítimos evolutivos a POF locais.</p>
 <p style="font-size: 17px;">Quando o vetor <strong><i>| X<sub>M</sub> |</i></strong> atinge os valores de <strong><i>| 0.5  0.5 .... 0.5 |</i></strong> a POF do problema é encontrada.</p>
 <div class="arithmatex">\[
 \textcolor{darkred}{\boldsymbol{g(X_M)} = 100 \bigg[\big|X_m\big|+\displaystyle\sum_{X_I \in X_M} (xi-0.5)^2-cos(20\pi(X_i-0.5))\bigg]}
 \]</div>
-<h3 id="funcoes-objetivo"><strong>Funções objetivo</strong></h3>
+<h2 id="funcoes-objetivo"><strong>Funções objetivo</strong></h2>
 <p style="font-size: 17px;">Cada função objetivo recebe um valor da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span>. A POF do problema esta diretamente ligada a <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span>.</p>
 <div class="arithmatex">\[
 \textcolor{blue}{f_1}(X)=\frac{1}{2}x_1 x_2...x_{M-1}(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
@@ -547,9 +548,9 @@
 <div class="arithmatex">\[
 \textcolor{blue}{f_M}(X)=\frac{1}{2}(1-x_1)(1+\boldsymbol{\textcolor{darkred}{g(X_M)}}),
 \]</div>
-<h3 id="metodos"><strong>Métodos</strong></h3>
-<p>dtlz1.<a href="../inPOF/">POFsamples()</a></p>
-<p>dtlz1.<a href="../outPOF/">samples()</a></p>
+<h2 id="metodos"><strong>Métodos</strong></h2>
+<p>dtlz1.<a href="../inPOF/">POFsamples()</a>
+dtlz1.<a href="../outPOF/">samples()</a></p>
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
 </div>
